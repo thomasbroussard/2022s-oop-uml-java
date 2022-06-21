@@ -2,6 +2,9 @@ package fr.epita.bank.datamodel;
 
 import java.util.List;
 
+/**
+ * this is a class reprensenting the customer data
+ */
 public class Customer {
 
     private String address;
