@@ -56,6 +56,8 @@ public class Customer {
         return "Customer{" +
                 "address='" + address + '\'' +
                 ", name='" + name + '\'' +
+                ", investmentAccounts=" + investmentAccounts +
+                ", savingsAccounts=" + savingsAccounts +
                 '}';
     }
 }
