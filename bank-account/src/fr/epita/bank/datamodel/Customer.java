@@ -1,5 +1,6 @@
 package fr.epita.bank.datamodel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,8 +11,8 @@ public class Customer {
     private String address;
     private String name;
 
-    private List<InvestmentAccount> investmentAccounts;
-    private List<SavingsAccount> savingsAccounts;
+    private List<InvestmentAccount> investmentAccounts = new ArrayList<>();
+    private List<SavingAccount> savingsAccounts = new ArrayList<>();
 
     public Customer(String address, String name) {
         this.address = address;
@@ -42,11 +43,11 @@ public class Customer {
         this.investmentAccounts = investmentAccounts;
     }
 
-    public List<SavingsAccount> getSavingsAccounts() {
+    public List<SavingAccount> getSavingsAccounts() {
         return savingsAccounts;
     }
 
-    public void setSavingsAccounts(List<SavingsAccount> savingsAccounts) {
+    public void setSavingsAccounts(List<SavingAccount> savingsAccounts) {
         this.savingsAccounts = savingsAccounts;
     }
 
@@ -59,5 +60,10 @@ public class Customer {
                 ", investmentAccounts=" + investmentAccounts +
                 ", savingsAccounts=" + savingsAccounts +
                 '}';
+    }
+
+
+    public void addSavingAccount(SavingAccount savingAccount) {
+        this.savingsAccounts.add(savingAccount);
     }
 }

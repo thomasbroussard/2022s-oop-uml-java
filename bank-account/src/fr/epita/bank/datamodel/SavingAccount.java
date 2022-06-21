@@ -1,12 +1,12 @@
 package fr.epita.bank.datamodel;
 
-public class SavingsAccount {
+public class SavingAccount {
 
     private double interestRate;
 
     private Account primaryAccount;
 
-    public SavingsAccount(double i) {
+    public SavingAccount(double i) {
         this.primaryAccount = new Account(i);
     }
 
