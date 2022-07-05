@@ -1,6 +1,6 @@
 package fr.epita.geometry.datamodel;
 
-public class Parallelogram {
+public class Parallelogram extends AbstractShape implements IShape {
 
     private double height;
     private double width;

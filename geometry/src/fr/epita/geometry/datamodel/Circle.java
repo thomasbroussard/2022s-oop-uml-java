@@ -1,6 +1,6 @@
 package fr.epita.geometry.datamodel;
 
-public class Circle {
+public class Circle extends AbstractShape implements IShape{
 
     private double radius;
 

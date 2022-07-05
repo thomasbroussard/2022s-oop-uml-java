@@ -1,6 +1,6 @@
 package fr.epita.geometry.datamodel;
 
-public class Rectangle {
+public class Rectangle implements IShape {
 
     private Parallelogram parallelogram;
 

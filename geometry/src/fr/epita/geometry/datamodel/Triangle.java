@@ -1,6 +1,6 @@
 package fr.epita.geometry.datamodel;
 
-public class Triangle {
+public class Triangle extends AbstractShape implements IShape {
 
     private double sideA;
     private double sideB;
