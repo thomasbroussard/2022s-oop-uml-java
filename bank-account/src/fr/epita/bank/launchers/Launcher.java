@@ -29,8 +29,6 @@ public class Launcher {
 
         savingsAccountList.add(new SavingAccount(10.2));
 
-
-
         System.out.println(customer);
 
 
