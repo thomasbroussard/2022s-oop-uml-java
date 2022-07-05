@@ -22,5 +22,10 @@ public class Circle extends AbstractShape implements IShape{
     }
 
 
-
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
