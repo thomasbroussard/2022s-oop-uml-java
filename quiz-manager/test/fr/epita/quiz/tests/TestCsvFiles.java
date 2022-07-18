@@ -11,7 +11,8 @@ public class TestCsvFiles {
 
     public static void main(String[] args) throws IOException {
         // given some context data
-        String providedTextToWrite = "thomas;thomas@epita.fr";
+        String name = "thomas";
+        String providedTextToWrite = name + ";thomas@epita.fr";
         File file  = new File("./quiz-manager/test/students.csv");
         FileOutputStream outputStream = new FileOutputStream(file);
         PrintWriter pw = new PrintWriter(outputStream);
@@ -22,17 +23,16 @@ public class TestCsvFiles {
         pw.flush();
         pw.close();
 
-
-
-
         // then we check if the result is as expected
         List<String> lines = Files.readAllLines(file.toPath());
         //TODO
         //extract the different parts of the students by using the split() method
-
         String line = lines.get(0);
+        String[] lineParts = line.split(";");
+        String linePart = lineParts[0];
+        System.out.println(linePart);
 
-        if (providedTextToWrite.equals(line)){
+        if (name.equals(lineParts[0])){
             System.out.println("success");
         } else {
             System.out.println("failure, expected: "+ providedTextToWrite + " got: " +line);
