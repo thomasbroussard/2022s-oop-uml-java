@@ -11,9 +11,7 @@ public class TestDBConnection {
         /*?currentSchema=public to be appended to the connection url to specify the schema*/
         Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/quiz-manager-db", "postgres","postgres");
 
-
-
-        String createTableQuery = "CREATE TABLE STUDENTS( id varchar(30), name varchar(255))";
+        String createTableQuery = "CREATE TABLE IF NOT EXISTS STUDENTS( id varchar(30), name varchar(255))";
 
         connection.prepareStatement(createTableQuery).execute();
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bank-account/bank-account.iml" filepath="$PROJECT_DIR$/bank-account/bank-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geometry/geometry.iml" filepath="$PROJECT_DIR$/geometry/geometry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main-project.iml" filepath="$PROJECT_DIR$/main-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quiz-manager/quiz-manager.iml" filepath="$PROJECT_DIR$/quiz-manager/quiz-manager.iml" />
+    </modules>
+  </component>
+</project>
