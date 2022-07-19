@@ -1,7 +1,7 @@
 package fr.epita.quiz.tests;
 
 import fr.epita.quiz.datamodel.Student;
-import fr.epita.quiz.services.data.StudentCSVDAO;
+import fr.epita.quiz.services.data.dao.StudentCSVDAO;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -32,8 +32,6 @@ public class TestCsvFiles {
         } else{
             System.out.println("error" + students.get(0));
         }
-
-
     }
     private static void testCsvWritingToFileThenReadingAsStudentInstance() throws IOException {
         // given some context data

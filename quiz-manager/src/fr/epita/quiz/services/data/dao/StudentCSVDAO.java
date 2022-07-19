@@ -1,4 +1,4 @@
-package fr.epita.quiz.services.data;
+package fr.epita.quiz.services.data.dao;
 
 import fr.epita.quiz.datamodel.Student;
 
@@ -31,7 +31,6 @@ public class StudentCSVDAO {
         for (String line : lines) {
             String[] lineParts = line.split(";");
             String linePart = lineParts[0];
-
             Student student = new Student(lineParts[1], lineParts[0]);
             students.add(student);
         }
