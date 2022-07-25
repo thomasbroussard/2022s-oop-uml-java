@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/geometry/geometry.iml" filepath="$PROJECT_DIR$/geometry/geometry.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-project.iml" filepath="$PROJECT_DIR$/main-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/quiz-manager/quiz-manager.iml" filepath="$PROJECT_DIR$/quiz-manager/quiz-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/revision/revision.iml" filepath="$PROJECT_DIR$/revision/revision.iml" />
     </modules>
   </component>
 </project>
